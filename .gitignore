@@ -61,3 +61,11 @@ Backend/*.pyc
 Backend/Backend/__pycache__
 Backend/db.sqlite3
 Backend/media 
+*.log
+*.pot
+*.pyc
+/__pycache__
+db.sqlite3
+media 
+__pycache__
+
