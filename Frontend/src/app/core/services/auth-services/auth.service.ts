@@ -19,4 +19,13 @@ export class AuthService {
       }
     );
   }
+
+  isAuthenticated(): Observable<any> {
+    return this.http.get<{ userID: Number}>(
+      'http://localhost:8000/api/auth/ping/',
+      {
+        withCredentials: true,
+      }
+    );
+  }
 }
