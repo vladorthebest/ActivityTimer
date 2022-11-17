@@ -13,19 +13,13 @@ export class AuthService {
   login(user: LoginRequest): Observable<any> {
     return this.http.post<any>(
       'http://localhost:8000/api/auth/login/',
-      { username: user.login, password: user.password },
-      {
-        withCredentials: true,
-      }
+      { username: user.login, password: user.password }
     );
   }
 
   isAuthenticated(): Observable<any> {
     return this.http.get<{ userID: Number}>(
-      'http://localhost:8000/api/auth/ping/',
-      {
-        withCredentials: true,
-      }
+      'http://localhost:8000/api/auth/ping/'
     );
   }
 }
