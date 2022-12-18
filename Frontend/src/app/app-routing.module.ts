@@ -12,6 +12,13 @@ const routes: Routes = [
       ),
   },
   {
+    path: 'timer',
+    loadChildren: () =>
+      import('./activity-timer/activity-timer.module').then(
+        (m) => m.ActivityTimerModule
+      ),
+  },
+  {
     path: '**',
     component: AppComponent,
     canActivate: [AuthGuard]
