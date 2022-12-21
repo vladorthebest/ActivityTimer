@@ -1,49 +1,51 @@
 # Compiled output
-Frontend/dist
-Frontend/tmp
-Frontend/out-tsc
-Frontend/bazel-out
+dist
+tmp
+out-tsc
+bazel-out
 
 # Node
-Frontend/node_modules
-Frontend/npm-debug.log
-Frontend/yarn-error.log
+node_modules
+npm-debug.log
+yarn-error.log
+.angular/
 
 # IDEs and editors
-Frontend/.idea/
-Frontend/.project
-Frontend/.classpath
-Frontend/.c9/
-Frontend/*.launch
-Frontend/.settings/
-Frontend/*.sublime-workspace
+.idea/
+.project
+.classpath
+.c9/
+*.launch
+.settings/
+*.sublime-workspace
 
 # Visual Studio Code
-Frontend/.vscode/*
-Frontend/!.vscode/settings.json
-Frontend/!.vscode/tasks.json
-Frontend/!.vscode/launch.json
-Frontend/!.vscode/extensions.json
-Frontend/.history/*
+.vscode/
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
+!.vscode/extensions.json
+.history/*
 .vscode/* 
 !.vscode/settings.json 
 !.vscode/tasks.json 
 !.vscode/launch.json 
 !.vscode/extensions.json 
 .history
+.prettierrc
 
 # Miscellaneous
-Frontend/.angular/cache
-Frontend/.sass-cache/
-Frontend/connect.lock
-Frontend/coverage
-Frontend/libpeerconnection.log
-Frontend/testem.log
-Frontend/typings
+.angular/cache
+.sass-cache/
+connect.lock
+coverage
+libpeerconnection.log
+testem.log
+typings
 
 # System files
-Frontend/.DS_Store
-Frontend/Thumbs.db
+.DS_Store
+Thumbs.db
 
 # Environments 
 .env 
@@ -55,16 +57,12 @@ env.bak/
 venv.bak/
 
 # Django #
-Backend/*.log
-Backend/*.pot
-Backend/*.pyc
-Backend/Backend/__pycache__
-Backend/db.sqlite3
-Backend/media 
 *.log
 *.pot
 *.pyc
-/__pycache__
+__pycache__/
 db.sqlite3
-media 
-__pycache__
+migrations/
+
+# Personal Files
+todo.txt
