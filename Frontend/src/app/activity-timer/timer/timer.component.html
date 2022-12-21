@@ -1,2 +1,7 @@
 <p>timer works!</p>
-<button (click)="checkActivity()">Check</button>
+<button (click)="toggleActivity()">
+    <h1>
+        {{ watchService.hh | number:'2.0'}}:{{ watchService.mm | number:'2.0'}}:{{ watchService.ss | number:'2.0'}}
+    </h1>
+</button>
+
