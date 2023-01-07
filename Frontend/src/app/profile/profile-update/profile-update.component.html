@@ -1,1 +1,21 @@
 <p>profile-update works!</p>
+<form [formGroup]="form" (ngSubmit)="profileUpdate()">
+    <div>
+        <label>Email</label>
+        <input type="email" formControlName="email">
+    </div>
+    <div>
+        <label>Bio</label>
+        <input type="text" formControlName="bio">
+    </div>
+    <div>
+        <label>first_name</label>
+        <input type="text" formControlName="first_name">
+    </div>
+    <div>
+        <label>last_name</label>
+        <input type="text" formControlName="last_name">
+    </div>
+    
+    <button type="submit" [disabled]="form.invalid">Update</button>
+</form>
